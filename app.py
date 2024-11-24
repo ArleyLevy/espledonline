@@ -188,7 +188,7 @@ def validar_codigo():
             """, (seq48, email))
             mysql.connection.commit()
 
-            mensagem = f"Para redefinir sua senha, acesse o link: http://192.168.18.79:5000/alterar_senha/{seq48}"
+            mensagem = f"Para redefinir sua senha, acesse o link: https://espledonline.onrender.com/alterar_senha/{seq48}"
             enviar_cod(email, mensagem)
 
             cursor.close()
